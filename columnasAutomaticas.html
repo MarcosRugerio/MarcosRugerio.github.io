@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <style>
+        .row .ejercicio1 {
+            text-align: center;
+            /* background: #f2f2f2; */
+            */ margin: 10px 0;
+        }
+        
+        .row>div {
+            text-align: center;
+            background: #f2f2f2;
+            */ margin: 10px 0;
+        }
+        
+        .uno {
+            background: #f2f2f2;
+        }
+        
+        .dos {
+            background: #dbdbdb;
+            padding: 0 20px;
+        }
+        
+        .tres {
+            background: #f2f2f2;
+        }
+    </style>
+    <title>Columnas Automáticas</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col uno col-sm-auto">
+                <h3>Columna 1</h3>
+            </div>
+            <!--La propiedad "auto" se usará para que tome solo el espacio necesario de acuerdo al contenido/texto/etc. En los siguientes Breakpoint abarcarán el restante de las 12 columnas-->
+            <div class="col dos col-sm-auto">
+                <h3> 2</h3>
+            </div>
+            <div class="col tres">
+                <h3>Columna 3</h3>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row ejercicio1">
+            <div class="col">
+                <h4>Columna #1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita delectus a, nisi ab quia tempora in voluptatibus aliquam. Expedita quibusdam in deleniti esse eius officia ullam id sit dolorum earum.</p>
+            </div>
+            <div class="col">
+                <h4>Columna #2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita delectus a, nisi ab quia tempora in voluptatibus aliquam. Expedita quibusdam in deleniti esse eius officia ullam id sit dolorum earum.</p>
+            </div>
+            <div class="col-12">
+                <h4>Columna #3</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita delectus a, nisi ab quia tempora in voluptatibus aliquam. Expedita quibusdam in deleniti esse eius officia ullam id sit dolorum earum.</p>
+            </div>
+            <div class="col-12">
+                <h4>Columna #3</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita delectus a, nisi ab quia tempora in voluptatibus aliquam. Expedita quibusdam in deleniti esse eius officia ullam id sit dolorum earum.</p>
+            </div>
+        </div>
+    </div>
+    <p class="align-content-center">Usando la clase dentro del w-100 dentro del div: <pre>&lt;div class="w-100"&gt;&lt;/div&gt;</pre></p>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h4>Columna #1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita delectus a, nisi ab quia tempora in voluptatibus aliquam. Expedita quibusdam in deleniti esse eius officia ullam id sit dolorum earum.</p>
+            </div>
+            <div class="col">
+                <h4>Columna #2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita delectus a, nisi ab quia tempora in voluptatibus aliquam. Expedita quibusdam in deleniti esse eius officia ullam id sit dolorum earum.</p>
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+                <h4>Columna #3</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita delectus a, nisi ab quia tempora in voluptatibus aliquam. Expedita quibusdam in deleniti esse eius officia ullam id sit dolorum earum.</p>
+            </div>
+            <div class="col">
+                <h4>Columna #4</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita delectus a, nisi ab quia tempora in voluptatibus aliquam. Expedita quibusdam in deleniti esse eius officia ullam id sit dolorum earum.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
