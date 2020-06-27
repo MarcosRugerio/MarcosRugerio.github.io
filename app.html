@@ -51,27 +51,20 @@
                     </ion-item>
 
                     <ion-item>
-                        <ion-label position="floating">Régimen fiscal:</ion-label>
+                        <ion-label position="floating">Régimen Fiscal:</ion-label>
                         <ion-input></ion-input>
                     </ion-item>
 
                     <ion-list>
-                        <ion-radio-group>
-                            <ion-list-header>
-                                <ion-label>
-                                    Regimen Fiscal
-                                </ion-label>
-                            </ion-list-header>
+                        <ion-item>
+                            <ion-label>Persona Física</ion-label>
+                            <ion-radio value="fisica"></ion-radio>
+                        </ion-item>
 
-                            <ion-item>
-                                <ion-label>Persona física</ion-label>
-                                <ion-radio value="fisica"></ion-radio>
-                            </ion-item>
-
-                            <ion-item>
-                                <ion-label>Persona Moral</ion-label>
-                                <ion-radio value="moral"></ion-radio>
-                            </ion-item>
+                        <ion-item>
+                            <ion-label>Persona Moral</ion-label>
+                            <ion-radio value="moral"></ion-radio>
+                        </ion-item>
                     </ion-list>
 
                     <ion-item>
@@ -105,6 +98,29 @@
     </ion-app>
 
     <script>
+        const controller = document.querySelector('ion-alert-controller');
+        let firstName, lastName;
+
+        function processForm(event) {
+            event.preventDefault();
+            controller.create({
+                header: 'Account Created',
+                message: `Created account for: <b>${firstName} ${lastName}</b>`,
+                buttons: [{
+                    text: 'OK'
+                }]
+            }).then(alert => alert.present());
+        }
+
+        function handleFirstNameValue(event) {
+            firstName = event.target.value;
+        }
+
+        function handleLastNameValue(event) {
+            lastName = event.target.value;
+        }
+
+
         const button = document.querySelector('ion-button');
         button.addEventListener('click', handleButtonClick);
 
