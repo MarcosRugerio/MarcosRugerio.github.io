@@ -28,7 +28,7 @@ aside {
 .widgets {
     background: #f2f2f2;
     color: #424242;
-    margin-bottom: 20px;
+    padding: 20px 0px;
 }
 
 .widgets>div {
