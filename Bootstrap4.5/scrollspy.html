@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Scrollspy</title>
+    <style>
+        body {
+            position: relative;
+            /* padding-top: 54px; */
+        }
+        
+        .GeekMaker a {
+            color: #fff;
+            padding: 15px;
+        }
+        
+        .GeekMaker .active,
+        .GeekMaker a:hover {
+            background: rgba(255, 255, 255, .1);
+        }
+        
+        .seccion {
+            margin-bottom: 1000px;
+        }
+        
+        .seccion .columna {
+            padding-top: 100px;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#GeekMaker">
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <div id="GeekMaker">
+                    <ul class="GeekMaker nav fixed-top navbar-inverse bg-primary">
+                        <li class="nav-item">
+                            <a href="#seccion1" class="nav-link">Seccion 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#seccion2" class="nav-link">Seccion 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#seccion3" class="nav-link">Seccion 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row seccion" id="seccion1">
+            <div class="col-12 columna">
+                <h2>Seccion 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi dolores facilis, omnis inventore commodi quisquam sequi sed amet sit repellendus, minus dolorem voluptate, numquam maiores animi ipsa expedita neque.</p>
+            </div>
+        </div>
+
+        <div class="row seccion" id="seccion2">
+            <div class="col-12 columna">
+                <h2>Seccion 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi dolores facilis, omnis inventore commodi quisquam sequi sed amet sit repellendus, minus dolorem voluptate, numquam maiores animi ipsa expedita neque.</p>
+            </div>
+        </div>
+
+        <div class="row seccion" id="seccion3">
+            <div class="col-12 columna">
+                <h2>Seccion 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi dolores facilis, omnis inventore commodi quisquam sequi sed amet sit repellendus, minus dolorem voluptate, numquam maiores animi ipsa expedita neque.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>
